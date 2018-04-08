@@ -4,16 +4,16 @@
 //Do While loop!
 int main(void)
 {
-    int minutes;
-    int bottles = 12;
+    int min;
+    int bot = 12;
 
     do
     {
-        minutes = get_int("Minutes: ");
+        min = get_int("Minutes: ");
     }
-    while (minutes <= 0);
+    while (min <= 0);
     {
-        printf("%i\n", minutes * bottles);
+        printf("%i\n", min * bot);
     }
 
 }
