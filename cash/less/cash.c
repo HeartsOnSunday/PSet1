@@ -5,7 +5,7 @@ int main(void)
 {
     float changeDue;
     float changeInDollars;
-    int coinsReceived = 0;
+   // int coinsReceived = 0;
     //float quarter = 25;
 
     do
@@ -23,22 +23,36 @@ int main(void)
         //while (quarters can be used)
         if (changeInDollars >= 25)
         {
+            eprintf("Quarters!");
+
             //coinsReceived++;  //increase count
            // printf("Number of coins you will receive:  %i\n", coinsReceived);
-            int c = changeInDollars;
+          //  int c = changeInDollars;
 
-            int numQs = c % 25;  //decrease amount by a quarter
-            printf("you should get %i quarters\n", numQs);
+          //  int numQs = c % 25;  //decrease amount by a quarter
+         //   printf("you should get %i quarters\n", numQs);
 
-            coinsReceived = coinsReceived + numQs;
-            printf("you have %i quarters coming\n", coinsReceived);
+         //   coinsReceived = coinsReceived + numQs;
+        //    printf("you have %i quarters coming\n", coinsReceived);
 
-            changeInDollars = changeInDollars - (numQs*25);
-            printf("now you are owed %f", changeInDollars);
+         //   changeInDollars = changeInDollars - (numQs*25);
+         //   printf("now you are owed %f", changeInDollars);
 
+            if(changeInDollars >= 10)
+            {
+                eprintf("Dimes, kids!");
 
-            //use modula math
-            // change % 25 = numofQs
+                if(changeInDollars >= 5)
+                {
+                    eprintf("Nickles, kids!");
+
+                    if(changeInDollars >= 1)
+                    {
+                    eprintf("pennies, bruh!");
+                    }
+                }
+
+            }
         }
 
 

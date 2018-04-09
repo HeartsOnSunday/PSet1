@@ -22,7 +22,7 @@ int main(void)
                 printf("%s", " ");
             }
 
-            for (int c = 0; c < a  2; c++) //prints #'s for each row
+            for (int c = 0; c < a + 2; c++) //prints #'s for each row
             {
                 printf("#");
             }
