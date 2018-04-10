@@ -4,7 +4,6 @@
 int main(void)
 {
     int height;
-
     do
     {
         height = get_int("Height: ");
@@ -21,7 +20,6 @@ int main(void)
             {
                 printf("%s", " ");
             }
-
             for (int c = 0; c < a + 2; c++) //prints #'s for each row
             {
                 printf("#");
